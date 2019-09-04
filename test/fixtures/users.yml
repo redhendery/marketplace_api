@@ -2,8 +2,8 @@
 
 one:
   email: one@email.com
-  password_digest: hahsed_password
+  password_digest: <%= BCrypt::Password.create('password') %>
 
 two:
   email: two@email.com
-  password_digest: hahsed_password
+  password_digest: <%= BCrypt::Password.create('password') %>
